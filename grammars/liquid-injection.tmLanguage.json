@@ -689,7 +689,7 @@
           }
         },
         {
-          "match": "(?:(?:(?<={%)|(?<={%-)|^)\\s*)(capture|case|comment|for|form|if|javascript|paginate|schema|style)\\b",
+          "match": "(?:(?:(?<={%)|(?<={%-)|^)\\s*)(cache|capture|case|comment|content_for|for|form|if|parse_json|try|try_rc|unless)\\b",
           "captures": {
             "1": {
               "name": "keyword.control.other.liquid"
@@ -697,7 +697,7 @@
           }
         },
         {
-          "match": "(?:(?:(?<={%)|(?<={%-)|^)\\s*)(endcapture|endcase|endcomment|endfor|endform|endif|endjavascript|endpaginate|endschema|endstyle)\\b",
+          "match": "(?:(?:(?<={%)|(?<={%-)|^)\\s*)(endcache|endcapture|endcase|endcomment|endcontent_for|endfor|endform|endif|endparse_json|endtry|endtry_rc|endunless)\\b",
           "captures": {
             "1": {
               "name": "keyword.control.other.liquid"

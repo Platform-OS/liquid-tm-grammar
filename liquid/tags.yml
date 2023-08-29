@@ -1,31 +1,45 @@
 ---
 - assign
+- background
 - break
+- cache: endcache
 - capture: endcapture
 - case: endcase
 - comment: endcomment
+- content_for: endcontent_for
 - continue
 - cycle
 - decrement
 - echo
 - else
 - elsif
+- export
 - for: endfor
 - form: endform
+- function
+- graphql
+- hash_assign
 - if: endif
 - ifchanged
+- include_form
 - increment
-- javascript: endjavascript
-- layout
 - liquid
-- paginate: endpaginate
+- log
+- parse_json: endparse_json
+- print
 - raw
+- redirect_to
 - render
-- schema: endschema
-- section
-- sections
-- style: endstyle
-- stylesheet
+- response_headers
+- response_status
+- session
+- sign_in
+- spam_protection
 - tablerow
-- unless
+- theme_render
+- theme_render_rc
+- try: endtry
+- try_rc: endtry_rc
+- unless: endunless
 - when
+- yield
