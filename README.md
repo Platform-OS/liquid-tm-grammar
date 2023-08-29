@@ -2,13 +2,13 @@
   <br>
     <img src="https://github.com/Platform-OS/liquid-tm-grammar/blob/master/images/pos.jpg?raw=true" alt="logo" width="160" height="160">
   <br>
-  platformOS Liquid TextMate Grammar
+  platformOS
   <br>
 </h1>
 
-<h4 align="center">The official syntax highlighting grammar for platformOS Liquid</h4>
+<h4 align="center">The official syntax highlighting grammar for platformOS</h4>
 
-This repository contains the official syntax highlighting rules for the [platformOS flavor of Liquid](https://documentation.platformos.com).
+This repository contains the official syntax highlighting rules for the [platformOS flavor of Liquid](https://documentation.platformos.com/api-reference/liquid/introduction).
 
 [Features](#features) | [Development](#development) | [Credits](#credits)
 
