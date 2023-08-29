@@ -3,7 +3,7 @@
   {{ product }}
 {% endcomment %}
 {% comment %}{{ product.feature }}{% endcomment %}
-{% javascript %}
+{% try_rc %}
   {% comment %}{{ product.feature }}{% endcomment %}
   {% comment %}
     hi {{ product }}
@@ -16,4 +16,4 @@
   `
   const fuu = '{% comment %} {{ product.feature }} {% endcomment %}'
   const fuu2 = '{% comment %}{{ product.feature }}{% endcomment %}'
-{% endjavascript %}
+{% endtry_rc %}

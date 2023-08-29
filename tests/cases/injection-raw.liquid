@@ -3,7 +3,7 @@
   {{ product }}
 {% endraw %}
 {% raw %}{{ product.feature }}{% endraw %}
-{% javascript %}
+{% try_rc %}
   {% raw %}{{ product.feature }}{% endraw %}
   {% raw %}
     hi {{ product }}
@@ -16,4 +16,4 @@
   `
   const fuu = '{% raw %} {{ product.feature }} {% endraw %}'
   const fuu2 = '{% raw %}{{ product.feature }}{% endraw %}'
-{% endjavascript %}
+{% endtry_rc %}

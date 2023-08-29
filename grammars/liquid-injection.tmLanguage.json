@@ -167,17 +167,17 @@
       ]
     },
     "json_codefence": {
-      "begin": "({%-?)\\s*(schema)\\s*(-?%})",
-      "end": "({%-?)\\s*(endschema)\\s*(-?%})",
+      "begin": "({%-?)\\s*(parse_json)\\s*(-?%})",
+      "end": "({%-?)\\s*(endparse_json)\\s*(-?%})",
       "beginCaptures": {
         "0": {
-          "name": "meta.tag.metadata.schema.start.liquid"
+          "name": "meta.tag.metadata.parse_json.start.liquid"
         },
         "1": {
           "name": "punctuation.definition.tag.begin.liquid"
         },
         "2": {
-          "name": "entity.name.tag.schema.liquid"
+          "name": "entity.name.tag.parse_json.liquid"
         },
         "3": {
           "name": "punctuation.definition.tag.begin.liquid"
@@ -185,19 +185,19 @@
       },
       "endCaptures": {
         "0": {
-          "name": "meta.tag.metadata.schema.end.liquid"
+          "name": "meta.tag.metadata.parse_json.end.liquid"
         },
         "1": {
           "name": "punctuation.definition.tag.end.liquid"
         },
         "2": {
-          "name": "entity.name.tag.schema.liquid"
+          "name": "entity.name.tag.parse_json.liquid"
         },
         "3": {
           "name": "punctuation.definition.tag.end.liquid"
         }
       },
-      "name": "meta.block.schema.liquid",
+      "name": "meta.block.parse_json.liquid",
       "contentName": "meta.embedded.block.json",
       "patterns": [
         {

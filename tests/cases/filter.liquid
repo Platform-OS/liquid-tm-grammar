@@ -3,14 +3,14 @@
 {{
   "foo.woff"
     | asset_url
-    | preload_tag: as: 'font', media: 'mobile'
+    | upcase: as: 'font', media: 'mobile'
 }}
 
 {%
   echo
   "foo.woff"
     | asset_url
-    | preload_tag:
+    | downcase:
       as: 'font',
       media: 'mobile'
 %}
@@ -19,7 +19,7 @@
   assign foo =
   "foo.woff"
     | asset_url
-    | preload_tag:
+    | downcase:
       as: 'font',
       media:
         'mobile'

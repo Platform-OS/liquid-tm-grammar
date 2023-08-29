@@ -5,14 +5,14 @@ original file
 {{
   "foo.woff"
     | asset_url
-    | preload_tag: as: 'font', media: 'mobile'
+    | upcase: as: 'font', media: 'mobile'
 }}
 
 {%
   echo
   "foo.woff"
     | asset_url
-    | preload_tag:
+    | downcase:
       as: 'font',
       media: 'mobile'
 %}
@@ -21,7 +21,7 @@ original file
   assign foo =
   "foo.woff"
     | asset_url
-    | preload_tag:
+    | downcase:
       as: 'font',
       media:
         'mobile'
@@ -99,37 +99,37 @@ Grammar: liquid.tmLanguage.json
      text.html.liquid meta.object.liquid
        ^^^^^^^^^
        text.html.liquid meta.object.liquid support.function.liquid
->    | preload_tag: as: 'font', media: 'mobile'
+>    | upcase: as: 'font', media: 'mobile'
  ^^^^
  text.html.liquid meta.object.liquid
      ^^
      text.html.liquid meta.object.liquid
-       ^^^^^^^^^^^^
+       ^^^^^^^
        text.html.liquid meta.object.liquid support.function.liquid
+              ^
+              text.html.liquid meta.object.liquid
+               ^^^
+               text.html.liquid meta.object.liquid entity.other.attribute-name.liquid
+                  ^
+                  text.html.liquid meta.object.liquid
                    ^
-                   text.html.liquid meta.object.liquid
-                    ^^^
-                    text.html.liquid meta.object.liquid entity.other.attribute-name.liquid
-                       ^
-                       text.html.liquid meta.object.liquid
+                   text.html.liquid meta.object.liquid string.quoted.single.liquid
+                    ^^^^
+                    text.html.liquid meta.object.liquid string.quoted.single.liquid
                         ^
                         text.html.liquid meta.object.liquid string.quoted.single.liquid
-                         ^^^^
-                         text.html.liquid meta.object.liquid string.quoted.single.liquid
-                             ^
-                             text.html.liquid meta.object.liquid string.quoted.single.liquid
-                              ^^
-                              text.html.liquid meta.object.liquid
-                                ^^^^^^
-                                text.html.liquid meta.object.liquid entity.other.attribute-name.liquid
-                                      ^
-                                      text.html.liquid meta.object.liquid
-                                       ^
-                                       text.html.liquid meta.object.liquid string.quoted.single.liquid
-                                        ^^^^^^
-                                        text.html.liquid meta.object.liquid string.quoted.single.liquid
-                                              ^
-                                              text.html.liquid meta.object.liquid string.quoted.single.liquid
+                         ^^
+                         text.html.liquid meta.object.liquid
+                           ^^^^^^
+                           text.html.liquid meta.object.liquid entity.other.attribute-name.liquid
+                                 ^
+                                 text.html.liquid meta.object.liquid
+                                  ^
+                                  text.html.liquid meta.object.liquid string.quoted.single.liquid
+                                   ^^^^^^
+                                   text.html.liquid meta.object.liquid string.quoted.single.liquid
+                                         ^
+                                         text.html.liquid meta.object.liquid string.quoted.single.liquid
 >}}
  ^^
  text.html.liquid meta.object.liquid punctuation.definition.tag.end.liquid
@@ -160,12 +160,12 @@ Grammar: liquid.tmLanguage.json
      text.html.liquid meta.tag.liquid meta.entity.tag.liquid
        ^^^^^^^^^
        text.html.liquid meta.tag.liquid meta.entity.tag.liquid support.function.liquid
->    | preload_tag:
+>    | downcase:
  ^^^^
  text.html.liquid meta.tag.liquid meta.entity.tag.liquid
      ^^
      text.html.liquid meta.tag.liquid meta.entity.tag.liquid
-       ^^^^^^^^^^^^
+       ^^^^^^^^^
        text.html.liquid meta.tag.liquid meta.entity.tag.liquid support.function.liquid
 >      as: 'font',
  ^^^^^^
@@ -231,12 +231,12 @@ Grammar: liquid.tmLanguage.json
      text.html.liquid meta.tag.liquid meta.entity.tag.liquid
        ^^^^^^^^^
        text.html.liquid meta.tag.liquid meta.entity.tag.liquid support.function.liquid
->    | preload_tag:
+>    | downcase:
  ^^^^
  text.html.liquid meta.tag.liquid meta.entity.tag.liquid
      ^^
      text.html.liquid meta.tag.liquid meta.entity.tag.liquid
-       ^^^^^^^^^^^^
+       ^^^^^^^^^
        text.html.liquid meta.tag.liquid meta.entity.tag.liquid support.function.liquid
 >      as: 'font',
  ^^^^^^

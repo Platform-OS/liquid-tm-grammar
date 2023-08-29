@@ -138,7 +138,7 @@ Grammar: liquid.tmLanguage.json
    ^
    text.html.liquid meta.object.liquid
     ^^^^^^^^^^^^
-    text.html.liquid meta.object.liquid variable.language.liquid
+    text.html.liquid meta.object.liquid variable.other.liquid
                 ^
                 text.html.liquid meta.object.liquid
                  ^^
